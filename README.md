@@ -1,4 +1,4 @@
-# bindiff-rs
+# Bindiff
 
 A fast, memory-safe **function-level binary diffing** tool written in Rust (Linux + Windows).
 
@@ -29,4 +29,3 @@ bindiff ./old.bin ./new.bin -o result.json -H result.html
 - Improve function discovery for stripped binaries
 - CFG recovery and VF2 isomorphism-based matching
 - String/call-reference signature matching
-```
