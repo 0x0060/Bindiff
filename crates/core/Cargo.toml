@@ -1,0 +1,26 @@
+[package]
+name = "bindiff-core"
+version = "0.1.0"
+edition = "2025"
+license = "MIT"
+description = "Core library for a binary diffing tool"
+
+[features]
+# Future: add "capstone" feature to use capstone-rs; default to yaxpeax for pure-Rust.
+default = ["yaxpeax"]
+yaxpeax = []
+
+[dependencies]
+anyhow = { workspace = true }
+thiserror = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+rayon = { workspace = true }
+petgraph = { workspace = true }
+blake3 = { workspace = true }
+similar = { workspace = true }
+goblin = { workspace = true }
+yaxpeax-arch = { workspace = true }
+yaxpeax-x86 = { workspace = true }
+bitvec = { workspace = true }
+memmap2 = { workspace = true }

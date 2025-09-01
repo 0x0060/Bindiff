@@ -1,0 +1,16 @@
+[package]
+name = "bindiff"
+version = "0.1.0"
+edition = "2025"
+license = "MIT"
+description = "CLI for a binary function-level diffing tool"
+
+[dependencies]
+anyhow = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+clap = { workspace = true }
+colored = { workspace = true }
+indicatif = { workspace = true }
+bindiff-core = { path = "../core" }
+bindiff-report = { path = "../report" }

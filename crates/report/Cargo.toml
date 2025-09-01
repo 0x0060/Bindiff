@@ -1,0 +1,10 @@
+[package]
+name = "bindiff-report"
+version = "0.1.0"
+edition = "2025"
+license = "MIT
+description = "Report generation for bindiff-rs"
+
+[dependencies]
+serde = { workspace = true }
+serde_json = { workspace = true }
